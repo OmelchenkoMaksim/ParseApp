@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UseCasesApp</string>
+    <string name="timer_is_finished">timer_is_finished</string>
+    <string name="millis_until_finished">00%s</string>
+</resources>
