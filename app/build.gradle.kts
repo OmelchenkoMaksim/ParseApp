@@ -7,7 +7,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.usecasesapp"
+        applicationId = "com.example.parsingapp"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
@@ -28,7 +28,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    namespace = "com.example.usecasesapp"
+    namespace = "com.example.parsingapp"
 }
 
 dependencies {
@@ -39,11 +39,10 @@ dependencies {
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("com.google.android.material:material:1.7.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    implementation("io.insert-koin:koin-core:3.2.2")
     implementation("io.insert-koin:koin-android:3.2.2")
-    testImplementation("io.insert-koin:koin-test:3.2.2")
-    testImplementation("junit:junit:4.12")
+    implementation("com.squareup.retrofit2:retrofit:2.6.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.6.0")
 }

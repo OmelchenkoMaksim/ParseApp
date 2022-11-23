@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "UseCasesApp"
+rootProject.name = "ParsingApp"
 include(":app")
 include(":data")
 include(":domain")

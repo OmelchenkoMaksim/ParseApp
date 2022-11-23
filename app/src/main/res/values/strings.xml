@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">UseCasesApp</string>
+    <string name="app_name">ParsingApp</string>
     <string name="timer_is_finished">timer_is_finished</string>
     <string name="millis_until_finished">00%s</string>
+    <string name="service_unavailable_message">Service Unavailable</string>
+    <string name="no_connection_message">No Connection</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
+    <string name="try_again">Try again</string>
+    <string name="divider">- - - - - - - - - - - - - - - - -</string>
+    <string name="mark">mark</string>
+    <string name="check_internet">Please check your internet connection and navvis.com availability</string>
 </resources>
