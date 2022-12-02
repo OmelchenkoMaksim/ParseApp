@@ -10,6 +10,14 @@ interface NavvisService {
 
     /**
      * Fetch range of ints
+     * for example this json:
+
+    {
+    "numbers": [
+    4, 150, 12, 21, 136, 16, 3
+    ]
+    }
+
      */
     @GET("numbers.json")
     suspend fun fetch(): ResponseBody

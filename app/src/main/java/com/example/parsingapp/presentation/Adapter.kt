@@ -11,7 +11,7 @@ import com.example.parsingapp.R
 import com.example.parsingapp.data.models.ParseModel
 
 class Adapter(
-    private var contacts: List<ParseModel>,
+    private var parseModels: List<ParseModel>,
 ) : RecyclerView.Adapter<Adapter.BaseHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseHolder {
@@ -21,11 +21,15 @@ class Adapter(
     }
 
     override fun onBindViewHolder(holder: BaseHolder, position: Int) {
-        val contact = contacts[position]
+        val contact = parseModels[position]
         holder.bind(contact)
     }
 
-    override fun getItemCount(): Int = contacts.size
+    fun updateList(newList: List<ParseModel>) {
+        parseModels = newList
+    }
+
+    override fun getItemCount(): Int = parseModels.size
 
     class BaseHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

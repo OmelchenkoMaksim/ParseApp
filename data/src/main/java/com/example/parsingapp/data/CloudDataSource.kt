@@ -18,5 +18,4 @@ class CloudDataSourceImpl(
             CloudModel(listOf())
         }
     }
-
 }
