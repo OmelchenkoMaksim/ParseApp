@@ -6,7 +6,7 @@ import com.example.parsingapp.domain.repository.CloudDataSource
 import com.google.gson.Gson
 
 class CloudDataSourceImpl(
-    private val service: NavvisService,
+    private val service: RetroService,
     private val gson: Gson,
 ) : CloudDataSource<CloudModel> {
 

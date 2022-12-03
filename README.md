@@ -6,7 +6,7 @@ a JSON file. The response must be parsed and displayed in any kind of list view
 (RecyclerView, LazyColumn etc).
 
 Networking
-The REST service (http://navvis.com/numbers.json) is still in development which means that you
+The REST service (http://site.com/numbers.json) is still in development which means that you
 have to develop/test the app with a local response until the service becomes available.
 
 An example of the JSON response looks like this:

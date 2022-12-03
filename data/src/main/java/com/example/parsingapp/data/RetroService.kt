@@ -6,7 +6,7 @@ import retrofit2.http.GET
 /**
  * Main Retrofit Service
  * */
-interface NavvisService {
+interface RetroService {
 
     /**
      * Fetch range of ints
