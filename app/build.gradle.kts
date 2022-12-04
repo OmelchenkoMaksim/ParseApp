@@ -46,7 +46,7 @@ dependencies {
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    implementation("io.insert-koin:koin-android:3.2.2")
-    implementation("com.squareup.retrofit2:retrofit:2.6.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.6.0")
+    implementation("io.insert-koin:koin-android:3.3.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }

@@ -62,7 +62,7 @@ class RepositoryImpl(
         return Pair(Integer.parseInt(value), Integer.parseInt(section))
     }
 
-    private companion object {
+    internal companion object {
         const val MIN_BYTE_VALUE = 0
         const val MAX_BYTE_VALUE = 255
         const val OUT_OF_RANGE = "OUT OF RANGE"
