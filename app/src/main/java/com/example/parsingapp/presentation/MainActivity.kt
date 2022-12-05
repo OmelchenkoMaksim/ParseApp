@@ -1,6 +1,7 @@
 package com.example.parsingapp.presentation
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
         repeatRequestButton.setOnClickListener {
             viewModel.fetch()
+            Log.e("mylog","")
         }
     }
 }
