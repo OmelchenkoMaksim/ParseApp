@@ -30,9 +30,5 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         repeatRequestButton.setOnClickListener {
             viewModel.fetch()
         }
-
-        while (true){
-
-        }
     }
 }
