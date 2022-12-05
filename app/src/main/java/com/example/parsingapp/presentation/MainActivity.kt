@@ -31,5 +31,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             viewModel.fetch()
         }
 
+        while (true){
+
+        }
     }
 }
