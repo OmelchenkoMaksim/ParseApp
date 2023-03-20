@@ -17,9 +17,6 @@ dependencies {
 
     implementation(project(mapOf("path" to ":domain")))
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("androidx.core:core-ktx:1.9.0")
 
-    // need for tests
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.1")
-    testImplementation("org.junit.jupiter:junit-jupiter")
 }
