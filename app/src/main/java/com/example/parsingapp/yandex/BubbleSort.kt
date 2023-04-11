@@ -14,7 +14,7 @@ fun IntArray.bubbleSort() {
     while (needToSort) {
         needToSort = false
 
-        for (i in 1 until this.size) {
+        for (i in 1 until size) {
             val previous = this[i - 1]
             val current = this[i]
 

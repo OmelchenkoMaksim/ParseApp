@@ -8,17 +8,17 @@ enum class ElementKotlin(val label: String, val number: Int) {
 
 /*
 
-Давайте решим довольно простую задачку. Реализуйте enum class “Week”, который будет в себе хранить 7 дней недели
+Давайте решим довольно простую задачку. Реализуйте enum class “WeekUp”, который будет в себе хранить 7 дней недели
 {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY}.
 Класс должен иметь конструктор с полем localizedName: String,
 в котором на русском будет описано название дня недели («Понедельник», «Вторник» и т. д.).
-Класс Week должен содержать метод isWeekend(): String, который будет в зависимости от дня
+Класс WeekUp должен содержать метод isWeekUpend(): String, который будет в зависимости от дня
 недели возвращать строку «будний» для дней с понедельника по пятницу и «выходной» для остальных дней.
 После чего реализуйте метод main, в котором нужно вывести текст для каждого из
-дней недели по порядку с понедельника до воскресенья: «[день] — [isWeekend()] день».
+дней недели по порядку с понедельника до воскресенья: «[день] — [isWeekUpend()] день».
 
 */
-enum class Week(private val localizedName: String, number: Int) {
+enum class WeekUp(private val localizedName: String, number: Int) {
     MONDAY("ponedelnik", 1),
     TUESDAY("vtornik", 2),
     WEDNESDAY("sreda", 3),
@@ -30,18 +30,18 @@ enum class Week(private val localizedName: String, number: Int) {
     override fun toString() = localizedName
 }
 
-sealed class WeekMe(private val localizedName: String) {
-    class MONDAY : WeekMe("monday") {
+sealed class WeekUpMeUp(private val localizedName: String) {
+    class MONDAY : WeekUpMeUp("monday") {
         val a = 10
 
     }
 
-    class TUESDAY : WeekMe("")
-    class WEDNESDAY : WeekMe("")
-    class THURSDAY : WeekMe("")
-    class FRIDAY : WeekMe("")
-    class SATURDAY : WeekMe("")
-    class SUNDAY : WeekMe("")
+    class TUESDAY : WeekUpMeUp("")
+    class WEDNESDAY : WeekUpMeUp("")
+    class THURSDAY : WeekUpMeUp("")
+    class FRIDAY : WeekUpMeUp("")
+    class SATURDAY : WeekUpMeUp("")
+    class SUNDAY : WeekUpMeUp("")
 
     override fun toString(): String {
         return localizedName
