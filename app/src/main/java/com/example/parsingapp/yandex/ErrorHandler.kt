@@ -48,7 +48,7 @@ class ErrorHandler {
 
 class Network {
 
-    fun onNetworkError(code: Int?, requestId: String, error: String?): NetworkError =
+    fun onNetworkError(code: Int?, requestId: String, error: String): NetworkError =
     // метод будет вызываться программой всякий раз, когда будет получена ошибка
     // возвращать ошибку NoInternet, если code = null
     // возвращать ошибку NoData, если code = 200
@@ -72,9 +72,9 @@ class Network {
 // NoInternet -> на вход принимает только requestId: String. Поле должно быть доступно за пределами класса, т. е. должно быть объявлено как val
 // Передаёт сообщение в конструктор родителя: "Нет подключения к интернету."
 
-sealed class NetworkError(var message: String) {
+sealed class NetworkError(open var message: String) {
 
-    class ServerError(requestId: String, message: String?) :
+    class ServerError(requestId: String, override var message: String) :
         NetworkError("Ошибка взаимодействия с сервером для запроса: id = $requestId. Сообщение об ошибке: $message")
 
     class NoData(requestId: String) :
@@ -108,9 +108,5 @@ fun <T> Collection<T>.printMe() {
 fun <T> Collection<T>.funMe(myFun: (i: Int) -> Unit) {
 
 
-
-}
-
-enum class Monda{
 
 }

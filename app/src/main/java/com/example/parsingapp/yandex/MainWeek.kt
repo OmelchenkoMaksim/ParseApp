@@ -27,6 +27,17 @@ enum class WeekUp(private val localizedName: String, number: Int) {
     SATURDAY("subbota", 6),
     SUNDAY("voskresenie", 7);
 
+    fun isWeekend() =
+        when (this) {
+            WeekUp.MONDAY -> "будний"
+            WeekUp.TUESDAY -> "будний"
+            WeekUp.WEDNESDAY -> "будний"
+            WeekUp.THURSDAY -> "будний"
+            WeekUp.FRIDAY -> "будний"
+            WeekUp.SATURDAY -> "выходной"
+            WeekUp.SUNDAY -> "выходной"
+        }
+
     override fun toString() = localizedName
 }
 
@@ -54,4 +65,6 @@ fun main() {
         index % 2 == 0
     }
     println(arr.contentToString())
+
+    println(WeekUp.FRIDAY.toString())
 }
