@@ -25,7 +25,8 @@ enum class WeekUp(private val localizedName: String, number: Int) {
     THURSDAY("chetverg", 4),
     FRIDAY("piatnitsa", 5),
     SATURDAY("subbota", 6),
-    SUNDAY("voskresenie", 7);
+    SUNDAY("voskresenie", 7)
+    ;
 
     fun isWeekend() =
         when (this) {
