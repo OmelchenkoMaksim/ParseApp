@@ -72,10 +72,6 @@ class Student constructor(name: String, age: Int) : Person(name, age), Farewell 
             field = value
         }
 
-    init {
-        faculty = "Computer Science"
-    }
-
     override fun sayGoodbye() =
         println("My name is $name, I am $age years old, studying at the $faculty faculty, and my grade is $grade")
 

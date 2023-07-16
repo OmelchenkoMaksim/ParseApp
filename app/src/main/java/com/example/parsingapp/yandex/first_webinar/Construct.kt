@@ -1,12 +1,16 @@
 package com.example.parsingapp.yandex.first_webinar
 
 
-abstract class People(open var name: String, open var age: Int) {
-}
+abstract class People(
+    open var name: String,
+    open var age: Int
+)
+
 
 interface Greetings {
     fun sayHello()
 }
+
 
 class Engineer constructor(name: String, age: Int) : People(name, age), Greetings {
 
