@@ -1,4 +1,4 @@
-package com.example.parsingapp.yandex.high
+package com.example.parsingapp.yandex.third_webinar
 
 fun main() {
     LinkToFun2.printOursNumbers1()

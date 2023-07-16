@@ -1,4 +1,4 @@
-package com.example.parsingapp.yandex
+package com.example.parsingapp.yandex.first_webinar
 
 
 abstract class People(open var name: String, open var age: Int) {

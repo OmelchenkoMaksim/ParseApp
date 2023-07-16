@@ -1,4 +1,4 @@
-package com.example.parsingapp.yandex.high
+package com.example.parsingapp.yandex.third_webinar
 
 // Оператор :: незаменим в ситуациях, когда требуется передать функцию как параметр, не вызывая ее.
 object LinkToFun1 {

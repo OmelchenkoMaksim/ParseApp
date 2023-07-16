@@ -1,4 +1,4 @@
-package com.example.parsingapp.yandex
+package com.example.parsingapp.yandex.first_webinar
 
 enum class ElementKotlin(val label: String, val number: Int) {
     H("Hydrogen", 3),
