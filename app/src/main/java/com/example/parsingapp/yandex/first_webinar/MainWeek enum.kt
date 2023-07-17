@@ -7,7 +7,6 @@ enum class ElementKotlin(val label: String, val number: Int) {
 }
 
 /*
-
 Давайте решим довольно простую задачку. Реализуйте enum class “WeekUp”, который будет в себе хранить 7 дней недели
 {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY}.
 Класс должен иметь конструктор с полем localizedName: String,
@@ -16,7 +15,6 @@ enum class ElementKotlin(val label: String, val number: Int) {
 недели возвращать строку «будний» для дней с понедельника по пятницу и «выходной» для остальных дней.
 После чего реализуйте метод main, в котором нужно вывести текст для каждого из
 дней недели по порядку с понедельника до воскресенья: «[день] — [isWeekUpend()] день».
-
 */
 enum class WeekUp(private val localizedName: String, number: Int) {
     MONDAY("ponedelnik", 1),
