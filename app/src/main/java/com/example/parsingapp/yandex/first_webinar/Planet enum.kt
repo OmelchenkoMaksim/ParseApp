@@ -1,4 +1,5 @@
 package com.example.parsingapp.yandex.first_webinar
+
 /*
 Когда вы определяете enum, все его значения инициализируются при первом обращении к enum.
 Например, при первом вызове PlanetEnum.MERCURY или PlanetEnum.values(),
@@ -8,10 +9,16 @@ enum class PlanetEnum(val mass: Double, val radius: Double) {
 
     MERCURY(3.303e+23, 2.4397e6),
     VENUS(4.869e+24, 6.0518e6) {
+
         override val abc = 10
         override fun myFun() {
             println("$mass + $radius!!")
         }
+
+        override fun toString(): String {
+            return super.toString() + " My Super CODE "
+        }
+
     },
     EARTH(5.976e+24, 6.37814e6),
     MARS(6.421e+23, 3.3972e6),
@@ -21,6 +28,20 @@ enum class PlanetEnum(val mass: Double, val radius: Double) {
     NEPTUNE(1.024e+26, 2.4746e7)
 
     ;
+    /*
+    В данном случае, abc, myFun, surfaceGravity, surfaceWeight, и toString являются частью
+    определения enum, но не контрактом или интерфейсом. Они включаются во все инстансы enum.
+
+    С точки зрения OOP, они похожи на члены класса. Например, все инстансы
+    PlanetEnum имеют доступ к surfaceGravity, surfaceWeight, и toString.
+
+    С другой стороны, abc и myFun объявлены как open, что позволяет их переопределить
+    в инстансах enum (как это сделано в VENUS). Это дает дополнительную гибкость,
+    позволяя различным инстансам иметь различное поведение для этих функций.
+
+    В данном случае, VENUS переопределяет abc, myFun, и toString, но другие инстансы
+    PlanetEnum используют версии, определенные в основном теле PlanetEnum.
+    */
 
     private val universalGravitationalConstant = 6.67430e-11
 
