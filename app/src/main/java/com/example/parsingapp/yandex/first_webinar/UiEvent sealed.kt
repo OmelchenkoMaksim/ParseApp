@@ -42,7 +42,33 @@ fun main() {
     handleUiEvent(UiEvent.Swipe("left"))
     handleUiEvent(UiEvent.LongPress)
     handleUiEvent(UiEvent.DoubleClick)
-}
 
-// Этот код скомпилируется (т.к. наследование от class и position открыт)
-class DoubleClick(override var position: Int, val intensity: Int) : UiEvent.Click(position)
+    println("-----------------------")
+// не компилится т.к. нет состояния у отдельного члена, которое можно установить извне
+//    UiEventEnum.Click.apply { position = 5 }.handle()
+//    UiEventEnum.Swipe.apply { direction = "left" }.handle()
+    UiEventEnum.LongPress.handle()
+    UiEventEnum.DoubleClick.handle()
+}
+/*
+этот енам - попытка повторить функционал класса UiEvent
+но у него это не получается)
+*/
+enum class UiEventEnum {
+    Click {
+        override fun handle() = println("Click at position ${position}")
+        var position: Int = 0
+    },
+    Swipe {
+        override fun handle() = println("Swipe in ${direction} direction")
+        var direction: String = ""
+    },
+    LongPress {
+        override fun handle() = println("Long press event")
+    },
+    DoubleClick {
+        override fun handle() = println("Double click event")
+    };
+
+    abstract fun handle()
+}
