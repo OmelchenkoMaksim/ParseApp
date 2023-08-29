@@ -17,6 +17,6 @@ dependencies {
 
     implementation(project(mapOf("path" to ":domain")))
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.10.1")
 
 }
